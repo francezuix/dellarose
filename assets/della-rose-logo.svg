@@ -1,0 +1,41 @@
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+    <title id="title">Della Rose logo</title>
+    <desc id="desc">A circular pink salon logo with a stylized rose, curved stem, and leaves.</desc>
+
+    <circle cx="180" cy="180" r="142" fill="#FFE5EC"/>
+    <circle cx="180" cy="180" r="130" stroke="#FB6F92" stroke-width="7"/>
+    <circle cx="180" cy="180" r="119" stroke="#FFC2D1" stroke-width="3"/>
+
+    <g stroke="#FB6F92" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M183 181C201 197 213 220 216 250" stroke-width="8"/>
+        <path d="M215 250C217 271 220 289 225 305" stroke-width="8"/>
+
+        <path d="M214 248C238 235 262 236 279 251C259 267 233 266 214 248Z" fill="#FFE5EC" stroke-width="6"/>
+        <path d="M215 249C234 247 251 248 269 252" stroke-width="4"/>
+        <path d="M207 221C221 198 246 188 272 196C260 220 233 231 207 221Z" fill="#FFB3C6" stroke-width="6"/>
+        <path d="M210 220C229 209 247 202 263 198" stroke-width="4"/>
+
+        <path d="M155 198C132 190 114 175 105 153C130 151 153 161 169 184Z" fill="#FFE5EC" stroke-width="7"/>
+        <path d="M154 198C132 199 111 206 95 221C121 228 146 220 163 202Z" fill="#FFB3C6" stroke-width="7"/>
+        <path d="M151 164C128 157 107 143 96 123C121 118 145 126 163 147Z" fill="#FFE5EC" stroke-width="7"/>
+
+        <path d="M168 121C145 105 124 102 106 112C112 134 133 149 160 149Z" fill="#FFB3C6" stroke-width="7"/>
+        <path d="M180 112C161 91 140 82 119 87C119 111 136 132 164 140Z" fill="#FFE5EC" stroke-width="7"/>
+        <path d="M190 114C192 88 183 67 166 55C150 73 149 99 168 123Z" fill="#FFB3C6" stroke-width="7"/>
+        <path d="M207 123C227 105 250 99 269 107C266 132 247 150 218 154Z" fill="#FFE5EC" stroke-width="7"/>
+        <path d="M216 151C240 146 262 154 276 172C257 189 230 190 209 170Z" fill="#FFB3C6" stroke-width="7"/>
+        <path d="M204 190C223 188 244 196 258 213C238 227 212 223 194 201Z" fill="#FFE5EC" stroke-width="7"/>
+
+        <path d="M181 196C157 190 141 172 142 150C166 153 184 169 190 193Z" fill="#FD7E9E" stroke-width="7"/>
+        <path d="M185 193C207 181 218 159 211 137C188 145 176 168 185 193Z" fill="#FFC2D1" stroke-width="7"/>
+        <path d="M176 174C161 158 160 137 174 121C191 137 193 158 176 174Z" fill="#FFE5EC" stroke-width="7"/>
+        <path d="M183 178C195 162 195 144 183 130C169 143 169 163 183 178Z" fill="#FB6F92" stroke-width="6"/>
+
+        <path d="M168 133C151 130 135 135 124 147" stroke-width="5"/>
+        <path d="M124 147C139 150 153 147 164 137" stroke-width="5"/>
+        <path d="M173 140C158 149 151 161 151 176" stroke-width="5"/>
+        <path d="M189 139C202 148 207 163 202 178" stroke-width="5"/>
+        <path d="M189 139C178 145 174 157 179 169" stroke="#FFE5EC" stroke-width="5"/>
+        <path d="M160 184C171 188 183 187 194 181" stroke="#FFE5EC" stroke-width="5"/>
+    </g>
+</svg>
