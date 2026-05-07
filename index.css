@@ -35,7 +35,9 @@ header {
 
     align-items: center;
     justify-content: center;
+    gap: clamp(18px, 3vw, 52px);
     min-height: 100vh;
+    padding: 40px 24px;
 }
 
 .text {
@@ -55,14 +57,14 @@ header {
 }
 
 h1 {
-    font-size: 9rem;
-    line-height: 9rem;
+    font-size: clamp(5rem, 10vw, 9rem);
+    line-height: 0.95;
 }
 
 h2 {
-    font-size: 4rem;
+    font-size: clamp(2.6rem, 4.6vw, 4rem);
     width: 100%;
-    line-height: 3.2rem;
+    line-height: 0.88;
     text-align: left;
 }
 
@@ -74,6 +76,7 @@ span {
     border-radius: 12px;
     height: 24.2vw;
     width: 24.2vw;
+    object-fit: cover;
 
     transition: 200ms;
 }
@@ -86,7 +89,7 @@ span {
     display: flex;
     flex-direction: row;
 
-    height: 105vh;
+    min-height: 105vh;
     padding: 12px;
     gap: 12px;
 }
@@ -107,9 +110,9 @@ span {
 
 
 h3 {
-    font-size: 4rem;
+    font-size: clamp(3rem, 5vw, 4rem);
     width: 100%;
-    line-height: 3.2rem;
+    line-height: 0.9;
     text-align: center;
 }
 
@@ -396,23 +399,47 @@ h3 {
 
 @media (max-aspect-ratio: 1/1) {
     header {
-        min-height: 50vh;
+        flex-direction: column;
+        min-height: 78vh;
+        padding: 54px 20px 34px;
 
     }
+
+    .logo {
+        width: min(58vw, 220px);
+    }
+
+    .text {
+        width: 100%;
+    }
+
     .images {
-        height: 25vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: auto;
         margin-bottom: 20vw;
     }
+
+    .images img {
+        width: 100%;
+        height: 42vw;
+    }
+
+    .column {
+        height: auto;
+        margin-top: 0;
+    }
+
     h1 {
-        font-size: 6.4vh;
-        line-height: 6.2vh;
+        font-size: 15vw;
+        line-height: 0.92;
     }
 
     h2 {
-        font-size: 4vh;
+        font-size: 8.5vw;
         width: 100%;
-        line-height: 3.2vh;
-        text-align: left;
+        line-height: 0.9;
+        text-align: center;
     }
 
     .contact {

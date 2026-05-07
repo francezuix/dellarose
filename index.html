@@ -1,16 +1,19 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Della Rose, salao especializado em mega hair, manutencao e finalizacao.">
     <title>Della Rose</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="/assets/della-rose-logo.png">
+    <link rel="icon" type="image/png" href="assets/della-rose-logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     
 </head>
 <body>
     <header>
         <div class="image">
-                <img src="assets/della-rose-logo.png" alt="Logo Della Rose" class="logo">
+            <img src="assets/della-rose-logo.png" alt="Logo Della Rose" class="logo">
         </div>
         <div class="text">
 
@@ -21,18 +24,18 @@
     <h3><span>Para você</span></h3>
     <div class="images">
         <div class="column">
-            <img src="assets/mega-hair-1.png" alt="Mega hair castanho visto de costas">
-            <img src="assets/mega-hair-2.png" alt="Mega hair loiro ondulado visto de costas">
+            <img src="assets/mega-hair-1.png" alt="Mega hair castanho visto de costas" loading="lazy">
+            <img src="assets/mega-hair-2.png" alt="Mega hair loiro ondulado visto de costas" loading="lazy">
         </div>
         <div class="column">
-            <img src="assets/mega-hair-3.png" alt="Mega hair preto cacheado visto de costas">
-        </div>
-                <div class="column">
-            <img src="assets/mega-hair-4.png" alt="Mega hair ruivo com camadas visto de costas">
-            <img src="assets/mega-hair-5.png" alt="Mega hair morena iluminada visto de costas">
+            <img src="assets/mega-hair-3.png" alt="Mega hair preto cacheado visto de costas" loading="lazy">
         </div>
         <div class="column">
-            <img src="assets/mega-hair-6.png" alt="Mega hair castanho ondulado visto de costas">
+            <img src="assets/mega-hair-4.png" alt="Mega hair ruivo com camadas visto de costas" loading="lazy">
+            <img src="assets/mega-hair-5.png" alt="Mega hair morena iluminada visto de costas" loading="lazy">
+        </div>
+        <div class="column">
+            <img src="assets/mega-hair-6.png" alt="Mega hair castanho ondulado visto de costas" loading="lazy">
         </div>
         
     </div>
@@ -48,7 +51,7 @@
                     <i class="fa fa-whatsapp"></i>
                     Chamar no WhatsApp
                 </a>
-                <a href="https://www.instagram.com/" class="contact-button contact-button-secondary" target="_blank">
+                <a href="https://www.instagram.com/" class="contact-button contact-button-secondary" target="_blank" rel="noreferrer">
                     <i class="fa fa-instagram"></i>
                     Ver Instagram
                 </a>
@@ -56,7 +59,7 @@
         </div>
 
         <div class="contact-side">
-            <form class="letter-form" action="mailto:contato@dellarose.com" method="post" enctype="text/plain">
+            <form class="letter-form" id="letterForm">
                 <span class="letter-seal">✽</span>
                 <h4>Escreva sua cartinha</h4>
                 <label>
@@ -107,6 +110,20 @@
         <i class="fa fa-whatsapp"></i>
     </a>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script>
+        const letterForm = document.querySelector("#letterForm");
+
+        letterForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(letterForm);
+            const name = formData.get("Nome") || "Cliente";
+            const email = formData.get("Email") || "";
+            const message = formData.get("Mensagem") || "";
+            const body = `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`;
+
+            window.location.href = `mailto:contato@dellarose.com?subject=${encodeURIComponent("Cartinha para Della Rose")}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
 </body>
 </html>
